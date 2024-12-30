@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<title>notes</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+	</style>
+</head>
+<body>
+	<h1>notes</h1>
+	<h2>java programming</h2>
+<ul>
+	<li>
+		<h3>unit-1</h3>
+<p>LECTURE NOTES
+Course BSc Computer Science
+Effective from 2016-2017 and Onwards
+Batch 2018-2021
+Semester III
+Subject CORE 5: JAVA PROGRAMMING
+Furnished by,
+Vinodkanna.
+Assistant Professor
+Department of Computer Science
+Kathir College of Arts & Science
+Neelambur
+Coimbatore
+Syllabus
+Subject Description: This subject deals with Java Programming concepts.
+Goal: Enable to create wide range of Applications and Applets using Java.
+Objective: To inculcate knowledge on Java Programming concepts.
+UNIT I: Fundamentals of Object-Oriented Programming: Object-Oriented Paradigm–
+BasicConcepts of Object-Oriented Programming – Benefits of Object-Oriented Programming –
+Application of Object-Oriented Programming. Java Evolution: History – Features – How Java
+differs from C and C++ – Java and Internet – Java and www –Web Browsers. Overview of Java:
+simple Java program – Structure – Java Tokens – Statements – Java Virtual Machine.
+UNIT II: Constants, Variables, Data Types - Operators and Expressions–Decision Makingand
+Branching: if, if...else, nested if, switch, ? : Operator - Decision Making and Looping: while, do,
+for – Jumps in Loops - Labeled Loops – Classes, Objects and Methods.
+UNIT III: Arrays, Strings and Vectors–Interfaces: Multiple Inheritance–Packages:
+PuttingClasses together – Multithreaded Programming.
+UNIT IV: Managing Errors and Exceptions–Applet Programming–GraphicsProgramming.
+UNIT V: Managing Input / Output Files in Java : Concepts of Streams- Stream Classes–Byte
+Stream classes – Character stream classes – Using streams – I/O Classes – File Class – I/O
+exceptions – Creation of files – Reading / Writing characters, Byte-Handling Primitive data
+Types – Random Access Files.
+TEXTBOOK:
+1. Programming with Java – A Primer - E. Balagurusamy, 3rd Edition, TMH.
+REFERENCE BOOKS:
+The Complete Reference Java 2 - Patrick Naughton& Hebert Schildt, 3rd Edition, TMH
+Programming with Java – John R. Hubbard, 2nd Edition, TMH.
+Unit – 1
+1. Fundamentals of Object-Oriented Programming :
+OOP concepts in Java are the main ideas behind Java's Object Oriented Programming.
+Object means real-world things such as pen, paper, chair, etc. OOP is a technique that helps in
+designing a program more effectively using classes and objects. It provides the following concepts.
+❖ Class
+❖ Object
+❖ Inheritance
+❖ Polymorphism
+❖ Abstraction
+❖ Encapsulation
+Advantages
+The following are the advantages of OOP over procedure-oriented programming languages:
+• makes development of programs easier; in procedure-oriented languages it's difficult to
+manage the coding of the program when the program increases in size.
+• provides a way to interact with real-world data more effectively.
+• allows development of solutions for real-world problems.
+• provides hiding of codes but in a procedure-oriented language the data can be accessed
+from anywhere.
+2. Object oriented Paradigm
+The object-oriented paradigm took its shape from the initial concept of a new
+programming approach, while the interest in design and analysis methods came much later.
+• The first object–oriented language was Simula (Simulation of real systems) that was
+developed in 1960 by researchers at the Norwegian Computing Center.
+• In 1970, Alan Kay and his research group at Xerox PARK created a personal computer
+named Dynabook and the first pure object-oriented programming language (OOPL) -
+Smalltalk, for programming the Dynabook.
+• In the 1980s, Grady Booch published a paper titled Object Oriented Design that mainly
+presented a design for the programming language, Ada. In the ensuing editions, he
+extended his ideas to a complete object–oriented design method.
+• In the 1990s, Coad incorporated behavioral ideas to object-oriented methods.
+Object-oriented programming (OOP) is a programming paradigm based upon objects (having both
+data and methods) that aims to incorporate the advantages of modularity and reusability. Objects,
+which are usually instances of classes, are used to interact with one another to design applications
+and computer programs.
+3. Basic Concepts of Object-Oriented Programming
+In the class-based object-oriented programming paradigm,“object” refers to a particular
+instance of a class where the object can be a combination of variables, functions, and data
+structures. A good understanding of OOPs concepts can help in decision making when designing
+an application. How you should design an application and what language should be used?
+Object Oriented programming is a programming style which is associated with the concepts
+like class, object, Inheritance, Encapsulation, Abstraction, Polymorphism.
+Class
+A class is a collection of method and variables. It is a blueprint that defines the data and
+behavior of a type.
+Let’s take Human Being as a class. A class is a blueprint for any functional entity which defines
+its properties and its functions. Like Human Being, having body parts, performing various
+actions.
+We can define a class using the class keyword and the class body enclosed by a pair of curly
+braces, as shown in the following example:
+public class classname
+{
+ // declare field properties, event, delegate, and method
+}
+Inheritance
+Inheritance is a feature of object-oriented programming that allows code reusability when a
+class includes property of another class. Considering HumanBeing a class, which has properties
+like hands, legs, eyes, mouth, etc, and functions like walk, talk, eat, see etc.
+Man and Woman are also classes, but most of the properties and functions are included in
+HumanBeing. Hence, they can inherit everything from class HumanBeing using the concept of
+Inheritance.
+Java supports six types of inheritance as follows:
+❖ Single Inheritance.
+❖ Multiple Inheritance (Through Interface)
+❖ Multilevel Inheritance.
+❖ Hierarchical Inheritance.
+❖ Hybrid Inheritance (Through Interface)
+Objects
+My name is Yann, and I am an instance/object of class Man. When we say, Human Being,
+Man or Woman, we just mean a kind, you, your friend, and I. We are the forms of these classes.
+We have a physical existence while a class is just a logical definition. We are the objects.
+The syntax for creating an object of a class Man:
+Man Yann = new Man();
+Abstraction
+Abstraction means, showcasing only the required things to the outside world while hiding
+the details. Continuing our example, Human Being’s can talk, walk, hear, eat, but the details of the
+muscles mechanism and their connections to the brain are hidden from the outside world.
+Encapsulation
+Encapsulation means that we want to hide unnecessary details from the user. For example,
+when we call from our mobile phone, we select the number and press call button. But the entire
+process of calling or what happens from the moment we press or touch the call button to the moment
+we start having a phone conversation is hidden from us.
+Polymorphism
+Polymorphism is a concept, which allows us to redefine the way something works, by either
+changing how it is done or by changing the parts used to get it done. This can be done in two
+ways, overloading and overriding.
+4. Benefits of Object-Oriented Programming
+The important features of object–oriented programming are −
+❖ Bottom–up approach in program design
+❖ Programs organized around objects, grouped in classes
+❖ Focus on data with methods to operate upon object’s data
+❖ Interaction between objects through functions
+❖ Reusability of design through creation of new classes by adding features to existing
+classes
+Some examples of object-oriented programming languages are C++, Java, Smalltalk, Delphi, C#,
+Perl, Python, Ruby, and PHP.
+The advantages of object-oriented programming lie in this kind of encapsulation such as:
+❖ Modularity for easier troubleshooting
+❖ Reuse of code through inheritance
+❖ Flexibility through polymorphism
+❖ Effective problem solving
+❖ OOP offers easy to understand and a clear modular structure for programs.
+❖ Objects created for Object-Oriented Programs can be reused in other programs. Thus
+it saves significant development cost.
+❖ Large programs are difficult to write, but if the development and designing team
+follow OOPS concept then they can better design with minimum flaws.
+❖ It also enhances program modularity because every object exists independently.
+5. Applications of Object-Oriented Programming
+Client-Server Systems
+Object-oriented Client-Server Systems provide the IT infrastructure, creating object-oriented
+Client-Server Internet (OCSI) applications. Here, infrastructure refers to operating systems,
+networks, and hardware. OSCI consist of three major technologies:
+❖ The Client Server
+❖ Object-Oriented Programming
+❖ The Internet
+Object-Oriented Databases
+They are also called Object Database Management Systems (ODBMS). These databases
+store objects instead of data, such as real numbers and integers. Objects consist of the following:
+Attributes: Attributes are data that defines the traits of an object. This data can be as simple as
+integers and real numbers. It can also be a reference to a complex object.
+Methods: They define the behavior and are also called functions or procedures.
+Real-Time System Design
+Real time systems inherit complexities that makes difficult to build them. Object-oriented
+techniques make it easier to handle those complexities. These techniques present ways of dealing
+with these complexities by providing an integrated framework which includes schedule analysis
+and behavioral specifications.
+Simulation andModeling System
+It’s difficult to model complex systems due to the varying specification of variables. These
+are prevalent in medicine and in other areas of natural science, such as ecology, zoology, and
+agronomic systems. Simulating complex systems requires modeling and understanding
+interactions explicitly. Object-oriented Programming provides an alternative approach for
+simplifying these complex modeling systems.
+Hypertext and Hypermedia
+Hypermedia, on the other hand, is a superset of hypertext. Documents having hypermedia,
+not only contain links to other pieces of text and information, but also to numerous other forms of
+media, ranging from images to sound.
+Neural Networking and Parallel Programming
+It addresses the problem of prediction and approximation of complex time-varying
+systems. Firstly, the entire time-varying process is split into several time intervals or slots. Then,
+neural networks are developed in a particular time interval to disperse the load of various networks.
+OOP simplifies the entire process by simplifying the approximation and prediction ability of
+networks.
+Office Automation Systems
+These include formal as well as informal electronic systems primarily concerned with
+information sharing and communication to and from people inside as well as outside the
+organization. Some examples are:
+❖ Email
+❖ Word processing
+❖ Web calendars
+❖ Desktop publishing
+CIM/CAD/CAM Systems
+OOP can also be used in manufacturing and design applications as it allows people to
+reduce the effort involved. For instance, it can be used while designing blueprints, flowcharts, etc.
+OOP makes it possible for the designers and engineers to produce these flowcharts and blueprints
+accurately.
+AI Expert Systems
+These are computer applications which are developed to solve complex problems
+pertaining to a specific domain, which is at a level far beyond the reach of a human brain.
+It has the following characteristics:
+❖ Reliable
+❖ Highly responsive
+❖ Understandable
+❖ High-performance
+6. Java Evolution: History
+❖ The history of Java is very interesting. Java was originally designed for interactive
+television, but it was too advanced technology for the digital cable television industry at
+the time. The history of java starts with Green Team. Java team members (also known
+as Green Team), initiated this project to develop a language for digital devices such as
+set-top boxes, televisions, etc. However, it was suited for internet programming. Later, Java
+technology was incorporated by Netscape.
+❖ The principles for creating Java programming were "Simple, Robust, Portable, Platformindependent, Secured, High Performance, Multithreaded, Architecture Neutral, ObjectOriented, Interpreted and Dynamic".
+❖ Currently, Java is used in internet programming, mobile devices, games, e-business
+solutions, etc. There are given the significant points that describe the history of Java.
+❖ James Gosling, Mike Sheridan, and Patrick Naughtoninitiated the Java language
+project in June 1991. The small team of sun engineers called Green Team.
+❖ Originally designed for small, embedded systems in electronic appliances like set-top
+boxes.
+❖ Firstly, it was called "Greentalk" by James Gosling, and file extension was .gt.
+❖ After that, it was called Oak and was developed as a part of the Green project.
+Why had they chosen java name for java language? The team gathered to choose a new
+name. The suggested words were "dynamic", "revolutionary", "Silk", "jolt", "DNA", etc. They
+wanted something that reflected the essence of the technology: revolutionary, dynamic, lively,
+cool, unique, and easy to spell and fun to say.
+• According to James Gosling, "Java was one of the top choices along with Silk". Since Java
+was so unique, most of the team members preferred Java than other names.
+• Java is an island of Indonesia where first coffee was produced (called java coffee).
+• Notice that Java is just a name, not an acronym.
+• Initially developed by James Gosling at Sun Microsystems (which is now a subsidiary of
+Oracle Corporation) and released in 1995.
+• In 1995, Time magazine called Java one of the Ten Best Products of 1995.
+• JDK 1.0 released in(January 23, 1996).
+Java Version History
+Many java versions have been released till now. The current stable release of Java is Java SE 10.
+1. JDK Alpha and Beta (1995)
+2. JDK 1.0 (23rd Jan 1996)
+3. JDK 1.1 (19th Feb 1997)
+4. J2SE 1.2 (8th Dec 1998)
+5. J2SE 1.3 (8th May 2000)
+6. J2SE 1.4 (6th Feb 2002)
+7. J2SE 5.0 (30th Sep 2004)
+8. Java SE 6 (11th Dec 2006)
+9. Java SE 7 (28th July 2011)
+10. Java SE 8 (18th March 2014)
+11. Java SE 9 (21st Sep 2017)
+12. Java SE 10 (20th March 2018)
+7. Features
+Java is a general-purpose programming language developed with the aim to bring portability
+and a higher level of security. Other than these two main java features, there are many other
+features of Java that make it such a unique and popular language.
+List of features of Java programming languages-
+❖ Simple
+❖ Object-Oriented
+❖ Portable
+❖ Platform Independent
+❖ Secured
+❖ Robust
+❖ Architecture Neutral
+❖ Dynamic
+❖ High Performance
+❖ Multi-Threaded
+❖ Distributed
+Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun,
+Java language is a simple programming language because:
+o Java syntax is based on C++ (so easier for programmers to learn it after C++).
+o Java has removed many complicated and rarely-used features, for example, explicit
+pointers, operator overloading, etc.
+o There is no need to remove unreferenced objects because there is an Automatic Garbage
+Collection in Java.
+8. How Java differs from C and C++
+There are many differences and similarities between the C++ programming language
+and Java. A list of top differences between C++ and Java are given below:
+Comparison Index C++ Java
+Platformindependent
+C++ is platform-dependent. Java is platform-independent.
+Mainly used for C++ is mainly used for
+system programming.
+Java is mainly used for application
+programming. It is widely used in
+window, web-based, enterprise
+and mobile applications.
+Design Goal C++ was designed for
+systems and applications
+programming. It was an
+extension of C
+programming language.
+Java was designed and created as
+an interpreter for printing systems
+but later extended as a support
+network computing. It was
+designed with a goal of being easy
+to use and accessible to a broader
+audience.
+Goto C++ supports
+the goto statement.
+Java doesn't support the goto
+statement.
+Multiple
+inheritance
+C++ supports multiple
+inheritance.
+Java doesn't support multiple
+inheritance through class. It can be
+achieved by interfaces in java.
+Operator
+Overloading
+C++ supports operator
+overloading.
+Java doesn't support operator
+overloading.
+Pointers C++ supports pointers. You
+can write pointer program in
+C++.
+Java supports pointer internally.
+However, you can't write the
+pointer program in java. It means
+java has restricted pointer support
+in java.
+Compiler and
+Interpreter
+C++ uses compiler only.
+C++ is compiled and run
+using the compiler which
+converts source code into
+machine code so, C++ is
+platform dependent.
+Java uses compiler and interpreter
+both. Java source code is
+converted into bytecode at
+compilation time. The interpreter
+executes this bytecode at runtime
+and produces output. Java is
+interpreted that is why it is
+platform independent.
+Call by Value
+and Call by
+reference
+C++ supports both call by
+value and call by reference.
+Java supports call by value only.
+There is no call by reference in
+java.
+Structure and
+Union
+C++ supports structures and
+unions.
+Java doesn't support structures and
+unions.
+Thread Support C++ doesn't have built-in
+support for threads. It relies
+on third-party libraries for
+thread support.
+Java has built-in thread support.
+Documentation
+comment
+C++ doesn't support
+documentation comment.
+Java supports documentation
+comment (/** ... */) to create
+documentation for java source
+code.
+Virtual
+Keyword
+C++ supports virtual
+keyword so that we can
+decide whether or not
+override a function.
+Java has no virtual keyword. We
+can override all non-static
+methods by default. In other
+words, non-static methods are
+virtual by default.
+unsigned right
+shift >>>
+C++ doesn't support >>>
+operator.
+Java supports unsigned right shift
+>>> operator that fills zero at the
+top for the negative numbers. For
+positive numbers, it works same
+like >> operator.
+Inheritance Tree C++ creates a new
+inheritance tree always.
+Java uses a single inheritance tree
+always because all classes are the
+child of Object class in java. The
+object class is the root of
+the inheritance tree in java.
+Hardware C++ is nearer to hardware. Java is not so interactive with
+hardware.
+Object-oriented C++ is an object-oriented
+language. However, in C
+language, single root
+hierarchy is not possible.
+Java is also an objectoriented language. However,
+everything (except fundamental
+types) is an object in Java. It is a
+single root hierarchy as everything
+gets derived from
+java.lang.Object.
+Listed below are some major C++ features that were intentionally omitted from java or
+significantly modified.
+❖ Java does not support operator overloading.
+❖ Java does not have template classes as in C++.
+❖ Java does not support multiple inheritance of classes. This is accomplished using a new
+feature called “Interface”.
+❖ Java does not support global variables. Every variable and method is declared within
+classes and forms part of that class.
+❖ Java does not use pointers.
+❖ Java has replaced the destructor function with a finalize() function.
+❖ There are no header files in Java.
+9. Java and Internet
+❖ Java is strongly associated with the internet because of the first application program is
+written in Java was hot Java.
+❖ Web browsers to run applets on the internet.
+❖ Internet users can use Java to create applet programs & run then locally using a Javaenabled browser such as hot Java.
+❖ Java applets have made the internet a true extension of the storage system of the local
+computer.
+10. Java and www
+❖ Java communicates with a web page through a special tag called applet.
+❖ Java user sends a request for an HTML document to the remote computers net browser.
+❖ The web-browser is a program that accepts a request, processes the request and sends the
+required documents.
+❖ The HTML document is returned to that user browser.
+❖ The document contains the applet tag which identifies the applet. The corresponding applet
+is transferred to the user computer.
+❖ The Java enabled browser on the user's computer interprets the byte code and provide
+output.
+11. Web Browsers
+The internet is a vast sea of information represented in many formats and stored on many
+computers. a browser is a software application used to locate, retrieve and display content on the
+World Wide Web, including Web pages, images, video and other files. As a client/server model,
+the browser is the client run on a computer that contacts the Web server and requests information.
+The Web server sends the information back to the Web browser which displays the results.
+The browser application retrieves or fetches code, usually written in HTML (HyperText Markup
+Language) and/or another language, from a web server, interprets this code, and renders (displays)
+it as a Web page for you to view. on the computer or another Internet-enabled device that supports
+a browser.
+An example of Web Browsers:
+❖ Hot Java
+❖ Netscape Navigator
+❖ Internet Explorer
+❖ Google Chrome
+12. Overview of Java: simple Java program
+To create a simple java program, you need to create a class that contains the main method.
+The requirement for Java Hello World Example
+For executing any java program, you need to
+o Install the JDK if you don't have installed it, download the JDK and install it.
+o Set path of the jdk/bin directory
+o Create the java program
+o Compile and run the java program
+Creating Hello World Example
+Let's create the hello java program:
+❖ class Simple{
+❖ public static void main(String args[]){
+❖ System.out.println("Hello Java");
+❖ }
+❖ }
+To compile: javac Simple.java
+To execute: java Simple
+Output:Hello Java
+Compilation Flow:
+When we compile Java program using javac tool, java compiler converts the source code into byte
+code.
+13. Structure
+Structure of a java program is the standard format released by Language developer to the
+Industry programmer.
+A Java program involves the following sections:
+• Documentation Section
+• Package Statement
+• Import Statements
+• Interface Statement
+• Class Definition
+• Main Method Class
+• Main Method Definition
+Sun Micro System has prescribed the following structure for the java programmers for
+developing java application.
+❖ A package is a collection of classes, interfaces and sub-packages. A sub package
+contains collection of classes, interfaces and sub-sub packages etc. java.lang.*; package
+is imported by default and this package is known as default package.
+❖ Class is keyword used for developing user defined data type and every java program
+must start with a concept of class.
+❖ "ClassName" represent a java valid variable name treated as a name of the class each
+and every class name in java is treated as user-defined data type.
+❖ Data member represents either instance or static they will be selected based on the
+name of the class.
+❖ User-defined methods represents either instance or static they are meant for performing
+the operations either once or each and every time.
+❖ Each and every java program starts execution from the main() method. And hence
+main() method is known as program driver.
+❖ Since main() method of java is not returning any value and hence its return type must
+be void.
+❖ Since main() method of java executes only once throughout the java program execution
+and hence its nature must be static.
+❖ Since main() method must be accessed by every java programmer and hence whose
+access specifier must be public.
+❖ Each and every main() method of java must take array of objects of String.
+❖ Block of statements represents set of executable statements which are in term calling
+user-defined methods are containing business-logic.
+❖ The file naming conversion in the java programming is that which-ever class is containing
+main() method, that class name must be given as a file name with an extension .java.
+14. Java Tokens
+Java Tokens are the smallest individual building block or smallest unit of a Java program; the Java
+compiler uses it for constructing expressions and statements. Java program is a collection of
+different types of tokens, comments, and white spaces.
+When we write a program, we need different important things. We require language tokens, white
+spaces, and formats.
+There are various tokens used in Java:
+❖ Reserved Keywords
+❖ Identifiers
+❖ Literals
+❖ Operators
+❖ Separators
+White space is also considered as a token.
+15. Statements
+A statement specifies an action in a Java program, such as assigning the sum of x and y to z,
+printing a message to the standard output, writing data to a file, etc.
+Statements in Java can be broadly classified into three categories:
+❖ Declaration statement
+❖ Expression statement
+❖ Control flow statement
+Declaration Statement
+A declaration statement is used to declare a variable. For example,
+int num;
+int num2 = 100;
+String str;
+Expression Statement
+An expression with a semicolon at the end is called an expression statement. For example,
+/Increment and decrement expressions
+num++;
+++num;
+num--;
+--num;
+//Assignment expressions
+num = 100;
+num *= 10;
+//Method invocation expressions
+System.out.println("This is a statement");
+Methodname(param1, param2);
+Control Statements
+❖ Conditional execution
+❖ Looping
+Types of Conditional Execution
+❖ If Statement
+❖ If – Else statement
+❖ If- Else-if statement
+❖ Switch statement
+Types of Loop Execution
+❖ While
+❖ For
+16. Java Virtual Machine
+JVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime
+environment in which java bytecode can be executed.
+JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent).
+What is JVM?
+❖ A specification where working of Java Virtual Machine is specified. But implementation
+provider is independent to choose the algorithm. Its implementation has been provided by
+Oracle and other companies.
+❖ An implementation Its implementation is known as JRE (Java Runtime Environment).
+❖ Runtime Instance Whenever you write java command on the command prompt to run the
+java class, an instance of JVM is created.
+What JVM does?
+The JVM performs following operation:
+❖ Loads code
+❖ Verifies code
+❖ Executes code
+❖ Provides runtime environment
+JVM provides definitions for the:
+❖ Memory area
+❖ Class file format
+❖ Register set
+❖ Garbage-collected heap
+❖ Fatal error reporting etc.
+1) ClassLoader
+The class loader is a subsystem used for loading class files. It performs three major functions viz.
+Loading, Linking, and Initialization.
+2) Method Area
+JVM Method Area stores class structures like metadata, the constant runtime pool, and the code
+for methods.
+3) Heap
+All the Objects, their related instance variables, and arrays are stored in the heap. This memory is
+common and shared across multiple threads.
+4) JVM language Stacks
+Java language Stacks store local variables, and it’s partial results. Each thread has its own JVM
+stack, created simultaneously as the thread is created. A new frame is created whenever a method
+is invoked, and it is deleted when method invocation process is complete.
+5) PC Registers
+PC register store the address of the Java virtual machine instruction which is currently executing.
+In Java, each thread has its separate PC register.
+6) Native Method Stacks
+Native method stacks hold the instruction of native code depends on the native library. It is written
+in another language instead of Java.
+7) Execution Engine
+It is a type of software used to test hardware, software, or complete systems. The test execution
+engine never carries any information about the tested product.
+8) Native Method interface
+The Native Method Interface is a programming framework. It allows Java code which is running
+in a JVM to call by libraries and native applications.
+9) Native Method Libraries
+Native Libraries is a collection of the Native Libraries(C, C++) which are needed by the Execution
+Engine.
+Important Questions
+Section – A1 mark
+1. Which of the following is not OOPS concept in Java?
+a) Inheritance
+b) Encapsulation
+c) Polymorphism
+d) Compilation
+2. Which of the following is a type of polymorphism in Java?
+a) Compile time polymorphism
+b) Execution time polymorphism
+c) Multiple polymorphism
+d) Multilevel polymorphism
+3. When does method overloading is determined?
+a) At run time
+b) At compile time
+c) At coding time
+d) At execution time
+4. Which concept of Java is a way of converting real world objects in terms of class?
+a) Polymorphism
+b) Encapsulation
+c) Abstraction
+d) Inheritance
+5. Which concept of Java is achieved by combining methods and attribute into a
+class?
+a) Encapsulation
+b) Inheritance
+c) Polymorphism
+d) Abstraction
+6. Method overriding is combination of inheritance and polymorphism?
+a) True
+b) false
+7. The wrapping up of data and methods into single unit called class is known as
+a) Data Hiding
+b) Inheritance
+c) Encapsulation
+d) Polymorphism
+Section – B 5 marks
+1. Make a note on applications OOP
+2. Explain about web browsers.
+3. State the benefits of OOP
+4. Narrate the history and versions of java
+5. Explain how java differs from c and c++?
+Section – C 8 marks
+1. Explain the basic concept of Object oriented programming.
+2. Discuss in detail about Java Virtual machine
+3. Elucidate the structure of Java and write a simple java program.
+	</li>
+    </ul>
+</body>
+</html>
